@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Unidade</title>
+</head>
+<body>
+  <div class="converter-container">
+    <h1>Conversor de Unidades</h1>
+
+   <form>
+      <div class="input-section">
+          <label>Digite o valor: </label>
+          <input id="inputValue" placeholder="Insira o valor">
+          <link rel="stylesheet" href="style.css">
+      </div>
+
+      <div class="unit-selection">
+        <label>De: </label>
+        <select id="fromUnit"> 
+          <option value="metro">Metro</option>
+          <option value="centimetro">Centímetro</option>
+          <option value="milimetro">Milímetro</option>  
+        </select>
+
+        <label>Para: </label>
+        <select id="toUnit"> 
+          <option value="metro">Metro</option>
+          <option value="centimetro">Centímetro</option>
+          <option value="milimetro">Milímetro</option>  
+        </select>
+      </div>
+      
+      <input type="submit" id="convertBtn">
+    </form>
+
+    <div class="result-section">
+      <p>Resultado:</p>
+      <span id="resultValue"></span>
+    </div>
+  </div>
+</body>
+</html>
